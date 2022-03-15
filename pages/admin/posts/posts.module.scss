@@ -1,0 +1,145 @@
+.postsContainer {
+    padding: 32px;
+   
+    input {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .posts {
+        margin-top: 16px;
+
+        .post {
+            border: 1px solid #eee;
+            padding: 16px;
+            border-radius: 4px;
+            position: relative;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            .postImage{
+                margin-right: 12px;
+                img{
+                    border-radius: 4px;
+                }
+            }
+           
+            a {
+                font-size: 24px;
+                color: #222;
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+
+            h3{
+                margin-bottom: 12px;
+            }
+
+            p {
+                margin-top: 12px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .actions {
+                position: absolute;
+                top: 16px;
+                right: 16px;
+                display: flex;
+                align-items: center;
+                transition: 200ms all;
+
+                svg {
+                    cursor: pointer;
+                    margin: 0px 6px;
+                }
+            }
+
+        }
+    }
+
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.editPostContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 48px;
+
+    form {
+        padding: 32px;
+        border: 1px solid #dbdbc367;
+        box-shadow: -3px 3px 3px #d2d2bba1;
+        border-radius: 4px;
+        min-width: 720px;
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+        }
+    }
+
+}
+
+.comments {
+    margin: 32px;
+    border: 1px solid #eee;
+    padding: 16px;
+    .eachComment{
+        background-color: #f7f7e0cb;
+        margin-bottom: 12px;
+        padding: 12px;
+        border-radius: 4px;
+        position: relative;
+        .userComment{
+            font-size: 20px;
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+            p{
+                color: #9e9e9e;
+                margin-right: 12px;
+            }
+        }
+        
+        .actions{
+            position: absolute;
+            top: 12px;
+            right: 0px;
+            
+                transition: 200ms all;
+
+            svg{
+                margin-right: 12px;
+                cursor: pointer;
+            }
+        }
+        
+    }
+    .eachComment:last-child{
+        margin-bottom: 0px;
+    }
+    .inactiveHeader{
+        margin-top: 48px;
+    }
+    
+}
+
+.loaderContainer{
+    margin: 0 auto;
+    text-align: center;
+}
+

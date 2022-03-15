@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+.nav{
+    font-family: 'Merienda', cursive;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    border-bottom: 1px solid #E8E7D5;
+    h1{
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    h3{
+        font-size:16px
+    }
+    .socials{
+        a{
+            color:#222;
+            margin:0 12px;
+        }
+    }
+}
